@@ -1,0 +1,26 @@
+{
+	"id": "bosch-dicentis",
+	"name": "Bosch Dicentis",
+	"shortname": "dicentis",
+	"description": "Control and monitor Bosch Dicentis conference system",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "https://github.com/mko1989/Bosch-Dicentis-Companion-Module.git",
+	"bugs": "https://github.com/mko1989/Bosch-Dicentis-Companion-Module/issues",
+	"maintainers": [
+		{
+			"name": "Marcin Wardecki with help from Codeium Windsurf",
+			"email": "m.wardecki89@gmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../main.js"
+	},
+	"manufacturer": "Bosch",
+	"products": ["Dicentis Conference System"],
+	"keywords": ["conference", "microphone", "audio"]
+}
