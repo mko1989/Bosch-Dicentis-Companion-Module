@@ -4,12 +4,10 @@
 - **Server IP**: IP address of the Bosch Dicentis server
 - **Username**: Login credentials for API access
 - **Password**: Authentication password
-- **Reconnect**: Automatically attempt to reconnect if the connection is lost (recommended)
-- **Reset Variables**: Reset variables on initialization and reconnection
 
 ##### User Credentials
-The username and password is configured in this file:
-`(C:\ProgramData\Bosch\DICENTIS\API\Conference_Protocol_user.jsonc)` on the Server PC
+You need to add a user in Dicentis meeting application and give the user permissions, you can also log in as default admin as well. 
+The permissions of logged in user will appear in log for viewing.
 
 #### Debug Messages
 - Enable debug messages to track WebSocket connections, API interactions, and system events
@@ -22,13 +20,16 @@ The username and password is configured in this file:
 - Useful for troubleshooting connection issues, permission problems, and unexpected system behavior
 
 #### Variables
-- `$(dicentis:{seatName})`: Displays the screen line for each seat
-- `$(dicentis:mic_on)`: Indicates the current microphone state
-- Seat-specific variables named after participant
+- `$(dicentis:{seatName_screenLine})`: seatId - gives seatId of each seat for internal processing and for further possibilities to interact with triggers
+- `$(dicentis:Active_Microphone_screenLine)`: Indicates the active microphone's screenLine
+- `$(dicentis:Active_Microphone_screenName)`: Indicates the active microphone's screenName
+
 
 #### Actions
 - Toggle microphone for each seat
 - Activate/Deactivate individual microphones
+- Activate/Deactivate interpreter desks
+- Custom command for testing purposes
 
 #### Permissions
 

@@ -13,4 +13,3 @@ This Companion module provides control and monitoring for the Bosch Dicentis con
 - **Server IP**: IP address of the Bosch Dicentis server
 - **Username**: Login credentials
 - **Password**: Login credentials
-- **Reconnect**: Automatically reconnect on connection loss
